@@ -1,0 +1,134 @@
+:root {
+  --primary-color: #8b4513; /* Rich sienna brown */
+  --secondary-color: #faf3e0; /* Light cream background */
+  --text-color: #3d2c1e; /* Dark, deep brown for readability */
+  --highlight-color: #d2b48c; /* Tan for subtle highlights */
+  --hover-color: #a0522d; /* Warm brown for hover effects */
+}
+
+body {
+  margin: 60px auto;
+  max-width: 800px;
+  background-color: var(--secondary-color);
+  font-family: 'Roboto', sans-serif; /* Modern, clean font for better readability */
+  color: var(--text-color);
+  line-height: 1.75;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings for simplicity and elegance */
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif; /* Elegant serif font for headings */
+}
+
+h1 {
+  font-size: 56px; /* Slightly smaller for a modern look */
+  color: var(--primary-color);
+  margin: auto;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--text-color);
+  margin: auto;
+}
+
+h3 {
+  font-size: 22px;
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+/* Paragraph with subtle background */
+p {
+  background-color: var(--highlight-color);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px; /* Increased for better readability */
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation links with simple list styling */
+.navigation-links {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.navigation-links ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-links li {
+  display: inline-block;
+  margin: 0 15px;
+  margin-bottom: 20px;
+ 
+}
+
+.navigation-links a {
+  padding: 12px 25px; /* Slightly larger padding for better interaction */
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  background-color: var(--hover-color); /* Darker brown on hover */
+  color: var(--secondary-color);
+}
+
+/* Simplicity in hover effect */
+.email-link {
+  display: block;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Simple responsive design */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 40px;
+  }
+
+  h2 {
+      font-size: 26px;
+  }
+
+  h3 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  .navigation-links li {
+      display: block;
+      margin-bottom: 15px;
+  }
+
+  .navigation-links a {
+      width: 100%;
+      display: block;
+      text-align: center;
+  }
+}
